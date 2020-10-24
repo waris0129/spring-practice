@@ -4,5 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="java" class="com.cybertek.services.Java">
+        <property name="sessionHour" ref="teachingHour"/>
+
+    </bean>
+
+    <bean id="selenium" class="com.cybertek.services.Selenium">
+        <property name="sessionHour" ref="teachingHour"/>
+    </bean>
+
+    <bean id="teachingHour" class="com.cybertek.services.TeachingHour"/>
 
 </beans>
